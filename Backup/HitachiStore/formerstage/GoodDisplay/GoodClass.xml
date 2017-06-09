@@ -1,0 +1,141 @@
+<?xml version="1.0" standalone="yes"?>
+<Schema1>
+  <FirstClassDm FirstClassDmName="手机数码">
+    <SecondClassDm SecondClassDmName="手机通讯">
+      <ThirdClassDm ThirdClassDmName="手机" />
+      <ThirdClassDm ThirdClassDmName="对讲机" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="运营商">
+      <ThirdClassDm ThirdClassDmName="购机送费" />
+      <ThirdClassDm ThirdClassDmName="零元购机" />
+      <ThirdClassDm ThirdClassDmName="选号入网" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="手机配件">
+      <ThirdClassDm ThirdClassDmName="电池" />
+      <ThirdClassDm ThirdClassDmName="蓝牙耳机" />
+      <ThirdClassDm ThirdClassDmName="充电器" />
+      <ThirdClassDm ThirdClassDmName="手机耳机" />
+      <ThirdClassDm ThirdClassDmName="贴膜" />
+      <ThirdClassDm ThirdClassDmName="储存卡" />
+      <ThirdClassDm ThirdClassDmName="保护套" />
+      <ThirdClassDm ThirdClassDmName="车载" />
+      <ThirdClassDm ThirdClassDmName="IPhone配件" />
+      <ThirdClassDm ThirdClassDmName="其它配件" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="摄影摄像">
+      <ThirdClassDm ThirdClassDmName="数码相机" />
+      <ThirdClassDm ThirdClassDmName="单电/微单相机" />
+      <ThirdClassDm ThirdClassDmName="单反相机" />
+      <ThirdClassDm ThirdClassDmName="摄像机" />
+      <ThirdClassDm ThirdClassDmName="拍立得" />
+      <ThirdClassDm ThirdClassDmName="镜头" />
+      <ThirdClassDm ThirdClassDmName="滤镜" />
+      <ThirdClassDm ThirdClassDmName="闪光灯" />
+      <ThirdClassDm ThirdClassDmName="单反配件" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="数码配件">
+      <ThirdClassDm ThirdClassDmName="电池/充电器" />
+      <ThirdClassDm ThirdClassDmName="读卡器" />
+      <ThirdClassDm ThirdClassDmName="移动电源" />
+      <ThirdClassDm ThirdClassDmName="数码包" />
+      <ThirdClassDm ThirdClassDmName="数码贴膜" />
+      <ThirdClassDm ThirdClassDmName="三脚架/云台" />
+      <ThirdClassDm ThirdClassDmName="相机清洁" />
+    </SecondClassDm>
+  </FirstClassDm>
+  <FirstClassDm FirstClassDmName="家用电器">
+    <SecondClassDm SecondClassDmName="大家电">
+      <ThirdClassDm ThirdClassDmName="空调" />
+      <ThirdClassDm ThirdClassDmName="平板电视" />
+      <ThirdClassDm ThirdClassDmName="冰箱" />
+      <ThirdClassDm ThirdClassDmName="洗衣机" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="生活电器">
+      <ThirdClassDm ThirdClassDmName="电风扇" />
+      <ThirdClassDm ThirdClassDmName="冷风扇" />
+      <ThirdClassDm ThirdClassDmName="净化器" />
+      <ThirdClassDm ThirdClassDmName="吸尘器" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="厨房电器">
+      <ThirdClassDm ThirdClassDmName="榨汁机" />
+      <ThirdClassDm ThirdClassDmName="豆浆机" />
+      <ThirdClassDm ThirdClassDmName="电饭煲" />
+      <ThirdClassDm ThirdClassDmName="电压力锅" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="个人护理">
+      <ThirdClassDm ThirdClassDmName="剃须刀" />
+      <ThirdClassDm ThirdClassDmName="脱毛器" />
+      <ThirdClassDm ThirdClassDmName="口腔护理" />
+      <ThirdClassDm ThirdClassDmName="电吹风" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="健康电器">
+      <ThirdClassDm ThirdClassDmName="按摩器" />
+      <ThirdClassDm ThirdClassDmName="按摩椅" />
+      <ThirdClassDm ThirdClassDmName="足浴盆" />
+      <ThirdClassDm ThirdClassDmName="血压计" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="五金电器">
+      <ThirdClassDm ThirdClassDmName="电动工具" />
+      <ThirdClassDm ThirdClassDmName="手动工具" />
+      <ThirdClassDm ThirdClassDmName="仪表仪器" />
+      <ThirdClassDm ThirdClassDmName="排气扇" />
+    </SecondClassDm>
+  </FirstClassDm>
+  <FirstClassDm FirstClassDmName="家居家装">
+    <SecondClassDm SecondClassDmName="家纺">
+      <ThirdClassDm ThirdClassDmName="床品件套" />
+      <ThirdClassDm ThirdClassDmName="被子" />
+      <ThirdClassDm ThirdClassDmName="枕芯枕套" />
+      <ThirdClassDm ThirdClassDmName="床单被罩" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="家具">
+      <ThirdClassDm ThirdClassDmName="书架层架" />
+      <ThirdClassDm ThirdClassDmName="衣橱衣架" />
+      <ThirdClassDm ThirdClassDmName="电脑桌椅" />
+      <ThirdClassDm ThirdClassDmName="休闲椅/凳" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="灯具">
+      <ThirdClassDm ThirdClassDmName="台灯" />
+      <ThirdClassDm ThirdClassDmName="节能灯" />
+      <ThirdClassDm ThirdClassDmName="装饰灯" />
+      <ThirdClassDm ThirdClassDmName="落地灯" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="生活日用">
+      <ThirdClassDm ThirdClassDmName="收纳用品" />
+      <ThirdClassDm ThirdClassDmName="雨伞雨具" />
+      <ThirdClassDm ThirdClassDmName="浴室用品" />
+      <ThirdClassDm ThirdClassDmName="缝纫用品" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="清洁用具">
+      <ThirdClassDm ThirdClassDmName="纸品湿巾" />
+      <ThirdClassDm ThirdClassDmName="衣物清洁" />
+      <ThirdClassDm ThirdClassDmName="驱虫用品" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="家装建材">
+      <ThirdClassDm ThirdClassDmName="陶瓷" />
+      <ThirdClassDm ThirdClassDmName="地板" />
+      <ThirdClassDm ThirdClassDmName="厨卫" />
+      <ThirdClassDm ThirdClassDmName="门窗" />
+    </SecondClassDm>
+  </FirstClassDm>
+  <FirstClassDm FirstClassDmName="服装鞋帽">
+    <SecondClassDm SecondClassDmName="女装">
+      <ThirdClassDm ThirdClassDmName="连衣裙" />
+      <ThirdClassDm ThirdClassDmName="风衣" />
+      <ThirdClassDm ThirdClassDmName="羽绒服" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="男装">
+      <ThirdClassDm ThirdClassDmName="外套" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="女鞋">
+      <ThirdClassDm ThirdClassDmName="休闲" />
+    </SecondClassDm>
+    <SecondClassDm SecondClassDmName="童装">
+      <ThirdClassDm ThirdClassDmName="男童" />
+      <ThirdClassDm ThirdClassDmName="女童" />
+      <ThirdClassDm ThirdClassDmName="童鞋" />
+      <ThirdClassDm ThirdClassDmName="宝宝服饰" />
+      <ThirdClassDm ThirdClassDmName="儿童配饰" />
+    </SecondClassDm>
+  </FirstClassDm>
+</Schema1>

@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FirstLogin.master.cs" Inherits="HitachiStore.backstage.Back_Master.FirstLogin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <%--<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>--%>
+    <script src="../../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <link href="../../Styles/StyleSheet3.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript">
+        // 页面刷新
+//        function myRefresh() {
+//            window.location.reload();
+//        }
+        $(function () {
+            $('.css2 img').click(function () {
+                window.location.href = window.location.href;
+            });
+        });
+        //setTimeout('myRefresh()',1000);
+    </script>
+</head>
+<body>
+    <form id="form1" style=" width:100%; text-align:center;" runat="server">
+    <center>
+    <div style=" width:1024px">
+    <div id="navigationaaa">
+        <div class="css1">
+            <img src="../../image/logobs.gif" alt="logobs" 
+                style="height: 81px; width: 281px" /></div>
+             
+             <div class="css2">
+                 <a href="#this"><img src="../../image/shuaxin.gif" alt="shuaxin"/></a></div>
+             <div class="css3">
+                 <a href="../Admin/AdminLogin.aspx"><img src="../../image/tuichu.gif" alt="tuichu" /></a></div></div>
+    <table width="1024px" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="8" bgcolor="#353c44"  >
+                &nbsp;
+            </td>
+             
+            <td width="147px" valign="top" >
+              <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+  
+            <td style=" margin-top:2px" width="10px" bgcolor="#add2da">
+            
+            </td>
+            <td valign="top">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+            <td width="8" bgcolor="#353c44"  >
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+    <div>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td background="../../image/main_71.gif" style="line-height: 11px; table-layout: fixed"
+                    width="165">
+                    &nbsp;
+                </td>
+                <td background="../../image/main_72.gif" style="line-height: 11px; table-layout: fixed">
+                    &nbsp;
+                </td>
+                <td background="../../image/main_74.gif" style="line-height: 11px; table-layout: fixed"
+                    width="17">
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+            </div>
+   </div>
+   </center>
+    </form>
+</body>
+</html>

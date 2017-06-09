@@ -1,0 +1,194 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Secondary.master.cs"
+    Inherits="HitachiStore.formerstage.stage_Master.Secondary" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <center>
+        <div id="div_head" style="height: 25px; background-image: url('../../image/标题头微条.jpg');
+            font-size: 90%;">
+            <table id="table_head" style="width: 100%; height: 100%;">
+                <tr>
+                    <td style="width: 6%; text-align: right;">
+                        <a href="../GoodDisplay/ProductShow.aspx" style="color: #000000; font-size: large;
+                            text-decoration: none;">首页</a>
+                    </td>
+                    <td style="width: 40%;">
+                    </td>
+                    <td style="width: 35%; text-align: center;">
+                        <asp:Label ID="lbUserName" runat="server" Text="账号"></asp:Label>，欢迎来到天外天商城
+                    </td>
+                    <td style="width: 5%;">
+                        <a runat="server" id="aLogin" href="../UserRegister/Login.aspx" style="color: #000000;
+                            font-size: large; text-decoration: none;">
+                            <asp:Label runat="server" ID="lbLogin" Text="登录"></asp:Label></a>
+                    </td>
+                    <td style="width: 5%;">
+                        <a href="../UserRegister/Register.aspx" style="color: #000000; font-size: large;
+                            text-decoration: none;">注册</a>
+                    </td>
+                    <td style="width: 9%;">
+                        <a runat="server" id="a_Personinfo" style="color: #000000; font-size: large; text-decoration: none;">
+                            个人中心</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="div_all" style="width: 100%;">
+            <div id="div_brand" style="width: 100%; height: 100px; margin-top: 5px;">
+                <table id="table_brand" style="width: 100%; height: 100%;">
+                    <tr>
+                        <td style="width: 20%; text-align: left; background-image: url('../../image/商城标志2.jpg');
+                            background-repeat: no-repeat;">
+                        </td>
+                        <td style="width: 38%">
+                            <ajaxToolkit:ToolkitScriptManager runat="server" EnablePartialRendering="true" ID="ScriptManager1" />
+                            <div style="width: 100%; height: 40px;">
+                                <span id="time" runat="server" style="font-size: xx-large; color: Red; font-weight: bold;">
+                                </span>
+                            </div>
+                        </td>
+                        <td style="width: 12%">
+                        </td>
+                        <td style="width: 30%;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="width: 60%; height: 5px; background-color: Yellow; float: left; margin-top: 10px;">
+            </div>
+            <div style="width: 80%; height: 5px; background-color: Red; float: left; margin-top: 2px;">
+            </div>
+            <div style="width: 100%; height: 5px; background-color: Blue; float: left; margin-top: 2px;">
+            </div>
+            <script type="text/javascript" language="javascript">
+                function updateTime() {
+                    var label = document.getElementById('time');
+                    if (label) {
+                        var time = (new Date()).localeFormat("T");
+                        label.innerHTML = '天外天商城给您报时:' + "  " + time;
+                    }
+                }
+                updateTime();
+                window.setInterval(updateTime, 1000);
+               
+            </script>
+            <center>
+                <div id="div_content" style="width: 100%; margin-top: 20px;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </center>
+            <div id="div_bottom1" style="width: 100%;">
+                <table id="table_bottom1" style="width: 70%; height: 30px; font-size: 83%">
+                    <tr>
+                        <td>
+                            关于我们
+                        </td>
+                        <td>
+                            联系我们
+                        </td>
+                        <td>
+                            人才招聘
+                        </td>
+                        <td>
+                            商家入驻
+                        </td>
+                        <td>
+                            迷你调
+                        </td>
+                        <td>
+                            广告服务
+                        </td>
+                        <td>
+                            友情链接
+                        </td>
+                        <td>
+                            奢侈品网
+                        </td>
+                        <td>
+                            移动终端
+                        </td>
+                        <td>
+                            销售联盟
+                        </td>
+                    </tr>
+                </table>
+                <div id="div_bottom2">
+                    <table id="table_bottom2" style="width: 65%; font-size: 80%;">
+                        <tr>
+                            <td style="width: 40%">
+                                长春市公安局朝阳分局备案编号110110110
+                            </td>
+                            <td style="width: 20%">
+                                京ICP证12345号
+                            </td>
+                            <td style="width: 40%">
+                                互联网药品信息服务资格证编号-非经营性-2011-3232
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="div_bottom3">
+                    <table id="table_bottom3" style="width: 40%; font-size: 80%;">
+                        <tr>
+                            <td>
+                                Copyright2004-2012&nbsp tianwaitian天外天商城&nbsp 版权所有
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <table id="table_btmImg" style="width: 50%; height: 40px;">
+                    <tr>
+                        <td style="background-color: Red;">
+                        </td>
+                        <td style="background-color: Yellow;">
+                        </td>
+                        <td style="background-color: Green;">
+                        </td>
+                        <td style="background-color: Blue;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </center>
+    <%--登陆/注销 --%>
+    <asp:Panel runat="server" ID="palShow" Height="90px" Width="250px" BorderColor="Red"
+        BackColor="#FFCCCC" BorderStyle="Solid" BorderWidth="2px">
+        <center>
+            <div style="background-image: url(../../image/微条.jpg); text-align: left; height: 25px">
+            </div>
+            <div>
+                <asp:Label runat="server" ID="lbShow">
+                </asp:Label>
+            </div>
+            <div style="margin-top: 20px;">
+                <asp:Button ID="OKbtn" runat="server" Height="25px" Text="确定" OnClick="OKbtn_Click"
+                    Style="background-image: url(../../image/标题头微条.jpg)" BorderStyle="None" Width="75px"
+                    ForeColor="White" />
+                <asp:Button ID="Cancelbtn" runat="server" Height="25px" Text=" 取消" Style="background-image: url(../../image/标题头微条.jpg);
+                    margin-left: 20px" BorderStyle="None" Width="75px" ForeColor="White" />
+            </div>
+        </center>
+    </asp:Panel>
+    <ajaxToolkit:ModalPopupExtender ID="ModalPopupExtender1" runat="server" TargetControlID="lbLogin"
+        CancelControlID="Cancelbtn" DropShadow="true" PopupControlID="palShow">
+    </ajaxToolkit:ModalPopupExtender>
+    </form>
+</body>
+</html>

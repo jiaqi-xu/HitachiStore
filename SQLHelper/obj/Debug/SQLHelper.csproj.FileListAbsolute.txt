@@ -1,0 +1,10 @@
+E:\商城\代码\SQLHelper\bin\Debug\SQLHelper.dll
+E:\商城\代码\SQLHelper\bin\Debug\SQLHelper.pdb
+E:\商城\代码\SQLHelper\obj\Debug\SQLHelper.dll
+E:\商城\代码\SQLHelper\obj\Debug\SQLHelper.pdb
+E:\商城\代码\SQLHelper\obj\Debug\SQLHelper.csprojResolveAssemblyReference.cache
+E:\商城代码\代码\SQLHelper\bin\Debug\SQLHelper.dll
+E:\商城代码\代码\SQLHelper\bin\Debug\SQLHelper.pdb
+E:\商城代码\代码\SQLHelper\obj\Debug\SQLHelper.csprojResolveAssemblyReference.cache
+E:\商城代码\代码\SQLHelper\obj\Debug\SQLHelper.dll
+E:\商城代码\代码\SQLHelper\obj\Debug\SQLHelper.pdb

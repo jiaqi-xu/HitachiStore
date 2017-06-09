@@ -1,0 +1,468 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FirstMa.master.cs" Inherits="HitachiStore.formerstage.stage_Master.FirstMa" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="AjaxToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="refresh" content="1000" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="../../Scripts/roller.js" type="text/javascript"></script>
+    <style type="text/css">
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .div_navigation
+        {
+            width: 145px;
+            background: url('../../image/bg4.gif') -200px -1px repeat-x;
+            font-weight: bold;
+            height: 30px;
+            padding-top: 5px;
+            padding-left: 50px;
+            display: block;
+            text-align: left;
+            border-bottom: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+        .div_navigation2
+        {
+            text-decoration: none;
+        }
+        .div_navigation a:hover
+        {
+            color: #000;
+            background: url('../../image/bg4.gif') -24px 0px repeat-x;
+        }
+    </style>
+    <style type="text/css">
+        .navigation1
+        {
+            width: 200px;
+            font-family: Arial;
+        }
+        .navigation_ul
+        {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        .navigation_ul_li
+        {
+            border-bottom: 1px solid #1d96ba;
+        }
+        .navigation_ul_li_a
+        {
+            display: block;
+            padding: 5px 5px 5px 0.5em;
+            text-decoration: none;
+            border-left: 12px solid #c61111;
+            border-right: 1px solid #711515;
+        }
+        #navigation > ul > li > a:link, #navigation > ul > li > a:visited
+        {
+            background-color: #ff8383;
+            color: #FFFFFF;
+        }
+        #navigation > ul > li > a:hover
+        {
+            background-color: #ea0000;
+            color: #000000;
+        }
+        
+        .navigation_ul_li_ul
+        {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px 0px 0px 0px;
+        }
+        .navigation_ul_li_ul_li_ul
+        {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px 0px 0px 0px;
+        }
+        .navigation_ul_li_ul_li
+        {
+            border-top: 1px solid #666666;
+        }
+        .navigation_ul_li_ul_li_a
+        {
+            display: block;
+            padding: 3px 3px 3px 0.5em;
+            text-decoration: none;
+            border-left: 28px solid #c61111;
+            border-right: 1px solid #711515;
+            background-color: #e85070;
+            color: #FFFFFF;
+        }
+        .navigation_ul_li_ul_li_ul_li
+        {
+            border-top: 1px solid #666666;
+        }
+        .navigation_ul_li_ul_li_ul_li_a
+        {
+            display: block;
+            padding: 3px 3px 3px 0.5em;
+            text-decoration: none;
+            border-left: 50px solid #c61111;
+            border-right: 1px solid #711515;
+            background-color: #e90938;
+            color: #FFFFFF;
+        }
+        
+        #navigation ul li ul li a:hover
+        {
+            background-color: #ea0000;
+            color: #000000;
+        }
+    </style>
+    <script src="../../Scripts/jquery.min.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        function AAA() {
+            window.location.href = "~/formerstage/GoodDisplay/FirstClass.aspx?";
+        }
+    </script>
+    <script language="javascript" type="text/javascript">
+        $(function () {
+            $("li").find("ul").prev().click(function () {
+                $(this).next().toggle(500);
+            });
+            $("li:has(ul)").find("ul").hide();
+        });
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <AjaxToolkit:ToolkitScriptManager runat="server">
+    </AjaxToolkit:ToolkitScriptManager>
+    <center>
+        <%--标题DIV--%>
+        <div id="div_head" style="width: 100%; height: 25px; background-image: url('../../image/标题头微条.jpg');
+            font-size: 90%;">
+            <table id="table_head" style="width: 100%; height: 100%;">
+                <tr>
+                    <td style="width: 6%; text-align: right;">
+                        <a href="../GoodDisplay/ProductShow.aspx" style="color: #000000; font-size: large;
+                            text-decoration: none;">首页</a>
+                    </td>
+                    <td style="width: 40%;">
+                    </td>
+                    <td style="width: 35%; text-align: center;">
+                        <asp:Label ID="lbUserName" runat="server" Text="账号"></asp:Label>，欢迎来到天外天商城
+                    </td>
+                    <td style="width: 5%;">
+                        <a runat="server" id="aLogin" href="../UserRegister/Login.aspx" style="color: #000000;
+                            font-size: large; text-decoration: none;">
+                            <asp:Label runat="server" ID="lbLogin" Text="登录"></asp:Label></a>
+                    </td>
+                    <td style="width: 5%;">
+                        <a href="../UserRegister/Register.aspx" style="color: #000000; font-size: large;
+                            text-decoration: none;">注册</a>
+                    </td>
+                    <td style="width: 9%;">
+                        <a runat="server" id="a_Personinfo" style="color: #000000; font-size: large; text-decoration: none;">
+                            个人中心</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <%--商标DIV--%>
+        <div id="div_all" style="width: 100%;">
+            <div id="div_brand" style="width: 100%; height: 100px;">
+                <table id="table_brand" style="width: 100%; height: 100%;">
+                    <tr>
+                        <td style="width: 20%; background-image: url('../../image/商城标志2.jpg'); text-align: left;
+                            background-repeat: no-repeat;">
+                        </td>
+                        <td style="width: 38%">
+                            <div style="height: 30px; width: 470px; margin-left: 15px; background-image: url('../../image/搜索边框3.jpg');
+                                background-repeat: no-repeat;">
+                                <div style="float: left; width: 80%; height: 25px; margin-top: 4px; text-align: right;
+                                    padding-top: 3px;">
+                                    <asp:TextBox ID="TextBox1" runat="server" BackColor="White" BorderColor="White" BorderStyle="None"
+                                        BorderWidth="0px" Width="345px"></asp:TextBox></div>
+                                <div style="float: left; width: 20%; height: 26px; margin-top: 3px; text-align: left;">
+                                    <asp:Button ID="Button1" runat="server" Text="搜  索" Width="80px" BackColor="#fd1a00"
+                                        BorderColor="#fd1a00" BorderStyle="None" BorderWidth="0px" Height="25px" OnClick="Button1_Click" /></div>
+                            </div>
+                        </td>
+                        <td style="width: 12%">
+                            系统当前时间
+                        </td>
+                        <td style="width: 30%; background-image: url('../../image/商城公告4.jpg'); background-repeat: no-repeat;">
+                            <asp:Label ID="Label1" runat="server" Text="10点网站维护"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <%--导航--%>
+            <table id="div_navigation" style="background-image: url('../../image/导航栏微条.jpg');
+                background-repeat: repeat-x; height: 38px; width: 100%">
+                <tr>
+                    <td style="width: 20%;">
+                        <a>全部商品分类</a>
+                    </td>
+                    <td style="width: 145px;">
+                        <a class="div_navigation" href="../GoodDisplay/ProductShow.aspx">首页</a>
+                    </td>
+                    <td style="width: 145px;">
+                        <a class="div_navigation" href="../GoodDisplay/ClothesCity.aspx">服装城</a>
+                    </td>
+                    <td style="width: 145px;">
+                        <a class="div_navigation" href="../GoodDisplay/Circuit City.aspx">电器城</a>
+                    </td>
+                    <td style="width: 145px;">
+                        <a class="div_navigation" href="../GoodDisplay/Furniture City.aspx">家具城</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <%--左侧树--%>
+            <div id="navigation"  style="width: 20%;  height :1000px; float: left; background-color:White  " align="center" >
+                <%--<ul id="listUL" class="navigation_ul">
+                    <li class="navigation_ul_li"><a class="navigation_ul_li_a" href="#">图书、电子书刊、音像</a>
+                        <ul class="navigation_ul_li_ul">
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">电子书刊</a></li>
+                            <ul class="navigation_ul_li_ul_li_ul">
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">电子书</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">网络原刊</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">数字杂志</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">多媒体图书</a></li>
+                            </ul>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">音像</a>
+                                <ul class="navigation_ul_li_ul_li_ul">
+                                    <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                        href="#">音乐</a></li>
+                                    <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                        href="#">影视</a></li>
+                                    <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                        href="#">教育音像</a></li>
+                                </ul>
+                            </li>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">英文原版</a></li>
+                            <ul class="navigation_ul_li_ul_li_ul">
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">少儿</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">商业投资</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">英语学习与考试</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">小说</a></li>
+                            </ul>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">文艺</a></li>
+                            <ul class="navigation_ul_li_ul_li_ul">
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">小说</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">文学</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">青春文学</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">传记</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">艺术</a></li>
+                            </ul>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">少儿</a></li>
+                            <ul class="navigation_ul_li_ul_li_ul">
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">少儿</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">0-2岁</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">3-6岁</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">7-11岁</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">11-14岁</a></li>
+                            </ul>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">人在社科</a></li>
+                            <ul class="navigation_ul_li_ul_li_ul">
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">历史</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">哲学</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">国学</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">法律</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">宗教</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">心理学</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">文学</a></li>
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">社会科学</a></li>
+                            </ul>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">经管励志</a></li>
+                            <ul class="navigation_ul_li_ul_li_ul">
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">三级类目</a></li>
+                            </ul>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">生活</a></li>
+                            <ul class="navigation_ul_li_ul_li_ul">
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">三级类目</a></li>
+                            </ul>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">科技</a></li>
+                            <ul class="navigation_ul_li_ul_li_ul">
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">三级类目</a></li>
+                            </ul>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">教育</a></li>
+                            <ul class="navigation_ul_li_ul_li_ul">
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">三级类目</a></li>
+                            </ul>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">港台图书</a></li>
+                            <ul class="navigation_ul_li_ul_li_ul">
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">三级类目</a></li>
+                            </ul>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">其它</a></li>
+                            <ul class="navigation_ul_li_ul_li_ul">
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">三级类目</a></li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li class="navigation_ul_li"><a class="navigation_ul_li_a" href="#">手机数码</a>
+                        <ul class="navigation_ul_li_ul">
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">二级类目</a><ul
+                                class="navigation_ul_li_ul_li_ul">
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">三级类目</a></li>
+                            </ul>
+                            </li>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">二级类目</a><ul
+                                class="navigation_ul_li_ul_li_ul">
+                                <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                    href="#">三级类目</a></li>
+                            </ul>
+                            </li>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">二级类目</a>
+                                <ul class="navigation_ul_li_ul_li_ul">
+                                    <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                        href="#">三级类目</a></li>
+                                </ul>
+                            </li>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">二级类目</a>
+                                <ul class="navigation_ul_li_ul_li_ul">
+                                    <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                        href="#">三级类目</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation_ul_li"><a class="navigation_ul_li_a" href="#">一级类目</a>
+                        <ul class="navigation_ul_li_ul">
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">二级类目</a>
+                                <ul class="navigation_ul_li_ul_li_ul">
+                                    <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                        href="#">三级类目</a></li>
+                                </ul>
+                            </li>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">二级类目</a>
+                                <ul class="navigation_ul_li_ul_li_ul">
+                                    <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                        href="#">三级类目</a></li>
+                                </ul>
+                            </li>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">二级类目</a>
+                                <ul class="navigation_ul_li_ul_li_ul">
+                                    <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                        href="#">三级类目</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation_ul_li"><a class="navigation_ul_li_a" href="#">一级类目</a>
+                        <ul class="navigation_ul_li_ul">
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">二级类目</a>
+                                <ul class="navigation_ul_li_ul_li_ul">
+                                    <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                        href="#">三级类目</a></li>
+                                </ul>
+                            </li>
+                            <li class="navigation_ul_li_ul_li"><a class="navigation_ul_li_ul_li_a" href="#">二级类目</a>
+                                <ul class="navigation_ul_li_ul_li_ul">
+                                    <li class="navigation_ul_li_ul_li_ul_li"><a class="navigation_ul_li_ul_li_ul_li_a"
+                                        href="#">三级类目</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation_ul_li"><a class="navigation_ul_li_a" href="#">一级类目</a></li>
+                </ul>--%>
+                <asp:Panel ID="leftTree" runat="server" Style="margin-top: 126px; 
+                    width: 20%; float:left ;background-image: url(../../image/左侧树背景2.png); margin-left :-50px">
+                    <asp:TreeView ID="zouceshu" runat="server" DataSourceID="GoodClassXmlDataSource"
+                        ExpandDepth="1" Font-Bold="true" Font-Size="Large" CollapseImageUrl="~/image/节点二 (2).gif"
+                        ExpandImageUrl="~/image/节点二 (1).gif" NodeIndent="20" OnSelectedNodeChanged="zouceshu_SelectedNodeChanged">
+                        <DataBindings>
+                            <asp:TreeNodeBinding DataMember="Schema1" Text="商品分类" Value="商品分类" />
+                            <asp:TreeNodeBinding DataMember="FirstClassDm" TextField="FirstClassDmName" ValueField="FirstClassDmName" />
+                            <asp:TreeNodeBinding DataMember="SecondClassDm" TextField="SecondClassDmName" ValueField="SecondClassDmName" />
+                            <asp:TreeNodeBinding DataMember="ThirdClassDm" TextField="ThirdClassDmName" ValueField="ThirdClassDmName" />
+                        </DataBindings>
+                    </asp:TreeView>
+                    <asp:XmlDataSource ID="GoodClassXmlDataSource" DataFile="GoodClass.xml" runat="server">
+                    </asp:XmlDataSource>
+                </asp:Panel>
+                <%--容器--%>
+                <div id="div_content2" style="width: 100%;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <%--容器--%>
+            </div>
+            <AjaxToolkit:AlwaysVisibleControlExtender ID="AlwaysVisibleControlExtender1" runat="server"
+                TargetControlID="leftTree" VerticalSide="top" HorizontalSide="left" VerticalOffset="50"
+                HorizontalOffset="50" ScrollEffectDuration="1">
+            </AjaxToolkit:AlwaysVisibleControlExtender>
+            <%--容器--%>
+            <div id="div_content" style="width: 80%; float: left;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </center>
+    <%--登陆/注销 --%>
+    <asp:Panel runat="server" ID="palShow" Height="90px" Width="250px" BorderColor="Red"
+        BackColor="#FFCCCC" BorderStyle="Solid" BorderWidth="2px">
+        <center>
+            <div style="background-image: url(../../image/微条.jpg); text-align: left; height: 25px">
+            </div>
+            <div>
+                <asp:Label runat="server" ID="lbShow">
+                </asp:Label>
+            </div>
+            <div style="margin-top: 20px;">
+                <asp:Button ID="OKbtn" runat="server" Height="25px" Text="确定" OnClick="OKbtn_Click"
+                    Style="background-image: url(../../image/标题头微条.jpg)" BorderStyle="None" Width="75px"
+                    ForeColor="White" />
+                <asp:Button ID="Cancelbtn" runat="server" Height="25px" Text=" 取消" Style="background-image: url(../../image/标题头微条.jpg);
+                    margin-left: 20px" BorderStyle="None" Width="75px" ForeColor="White" />
+            </div>
+        </center>
+    </asp:Panel>
+    <AjaxToolkit:ModalPopupExtender ID="ModalPopupExtender1" runat="server" TargetControlID="lbLogin"
+        CancelControlID="Cancelbtn" DropShadow="true" PopupControlID="palShow">
+    </AjaxToolkit:ModalPopupExtender>
+    </form>
+    <script type="text/javascript">
+        roller.init('div_navigation', 'h', -200, -24, 100, 20);
+    </script>
+</body>
+</html>

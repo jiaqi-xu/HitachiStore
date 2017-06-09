@@ -1,0 +1,14 @@
+E:\商城\代码\Models\bin\Debug\Models.dll
+E:\商城\代码\Models\bin\Debug\Models.pdb
+E:\商城\代码\Models\bin\Debug\SQLHelper.dll
+E:\商城\代码\Models\bin\Debug\SQLHelper.pdb
+E:\商城\代码\Models\obj\Debug\Models.dll
+E:\商城\代码\Models\obj\Debug\Models.pdb
+E:\商城\代码\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+E:\商城代码\代码\Models\bin\Debug\Models.dll
+E:\商城代码\代码\Models\bin\Debug\Models.pdb
+E:\商城代码\代码\Models\bin\Debug\SQLHelper.dll
+E:\商城代码\代码\Models\bin\Debug\SQLHelper.pdb
+E:\商城代码\代码\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+E:\商城代码\代码\Models\obj\Debug\Models.dll
+E:\商城代码\代码\Models\obj\Debug\Models.pdb

@@ -1,0 +1,96 @@
+﻿body 
+{
+    background-color:#10b5e2;
+    font-family:@Adobe 宋体 Std L;
+    font-size:12px;
+}
+*{border-style: none;
+   
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+   
+}
+.warp
+{
+    width:1024px;
+    margin:0 auto;
+}
+a{text-decoration:none; display:inline; color:#000000;}
+.top
+{
+    width:1024px;
+    height:151px;
+}
+.left
+{
+    width:267px;
+    height:355px;
+    float:left;
+}
+.center
+{
+    width:558px;
+    height:355px;
+    float:left;
+    background-image: url("../image/center.gif");
+}
+.center1
+{
+    width:558px;
+    height:89px;
+}
+.center2
+{
+    width:558px;
+    height:108px;
+}
+.center3
+{
+    width:357px;
+    height:105px;
+    margin-left:201px;
+}
+.text1
+{
+    width:100px;
+    margin-left:100px;
+    height:54px;
+    float:left;
+    text-align:justify;
+    line-height:54px;
+    font-size:24px;
+    font-family:@Adobe 楷体 Std R;
+    color:#ffffff;
+}
+.text2
+{
+    width:345px;
+    height:54px;
+    float:left;
+    }
+ .asp1
+ {
+     width:169px;
+     height:28px;
+     background-color:#23aae2;
+     margin-top:16px;
+ }
+    
+.right
+{
+    width:199px;
+    height:355px;
+    float:left;
+}
+.bottom
+{
+    width:1024px;
+    height:104px;
+}
+.bull
+{
+    width:130px;
+    height:27px;
+    background-image:url("../image/denglu.gif");
+}

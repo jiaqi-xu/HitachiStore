@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{27518B90-7792-42E9-8202-63EB9FE2350B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HitachiStore</RootNamespace>
+    <AssemblyName>HitachiStore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\GoodClass.xml" />
+    <Content Include="backstage\Admin\AdminLogin.aspx" />
+    <Content Include="backstage\Admin\AdminRegisterSuccess.htm" />
+    <Content Include="backstage\Admin\AdminRegsiter.aspx" />
+    <Content Include="backstage\Admin\AdminRegisterExceptionHandler.htm" />
+    <Content Include="backstage\EvaluationAdmin\EA_AdminInfo.aspx" />
+    <Content Include="backstage\EvaluationAdmin\EA_EvaluationExam.aspx" />
+    <Content Include="backstage\EvaluationAdmin\EA_EvaluationInfo.aspx" />
+    <Content Include="backstage\EvaluationAdmin\EA_FirstLogin.aspx" />
+    <Content Include="backstage\EvaluationAdmin\EA_SubTree.aspx" />
+    <Content Include="backstage\GoodAdmin\BlankPage.htm" />
+    <Content Include="backstage\GoodAdmin\GA_AddBigImg.aspx" />
+    <Content Include="backstage\GoodAdmin\GA_AddClum.aspx" />
+    <Content Include="backstage\GoodAdmin\GA_AddGood.aspx" />
+    <Content Include="backstage\GoodAdmin\GA_AddProperty.aspx" />
+    <Content Include="backstage\GoodAdmin\GA_AdminInfo.aspx" />
+    <Content Include="backstage\GoodAdmin\GA_FirstLogin.aspx" />
+    <Content Include="backstage\GoodAdmin\GA_GoodExam.aspx" />
+    <Content Include="backstage\GoodAdmin\GA_GoodExamInfo.aspx" />
+    <Content Include="backstage\GoodAdmin\GA_SubTree.aspx" />
+    <Content Include="backstage\GoodAdmin\GA_UpdateCircuitCity.aspx" />
+    <Content Include="backstage\GoodAdmin\GA_UpdateClothesCity.aspx" />
+    <Content Include="backstage\GoodAdmin\GA_UpdateFurnitureCity.aspx" />
+    <Content Include="backstage\GoodAdmin\GA_UpdateHomepage.aspx" />
+    <Content Include="backstage\GoodAdmin\GoodHtmlEdit2.aspx" />
+    <Content Include="backstage\OrderAdmin\OA_AdminInfo.aspx" />
+    <Content Include="backstage\OrderAdmin\OA_FirstLogin.aspx" />
+    <Content Include="backstage\OrderAdmin\OA_OrderExam.aspx" />
+    <Content Include="backstage\OrderAdmin\OA_OrderInfoma.aspx" />
+    <Content Include="backstage\OrderAdmin\OA_SubTree.aspx" />
+    <Content Include="backstage\OrderAdmin\TotalDeal.aspx" />
+    <Content Include="backstage\SeniorAdmin\AdminExam.aspx" />
+    <Content Include="backstage\SeniorAdmin\GeneralAdminInfo.aspx" />
+    <Content Include="backstage\SeniorAdmin\NotActivate.aspx" />
+    <Content Include="backstage\SeniorAdmin\SA_AdminInfo.aspx" />
+    <Content Include="backstage\SeniorAdmin\SA_DailyRecord.aspx" />
+    <Content Include="backstage\SeniorAdmin\SA_DayBookDay.aspx" />
+    <Content Include="backstage\SeniorAdmin\SA_DayBookInfo.aspx" />
+    <Content Include="backstage\SeniorAdmin\SA_EvaluaInfo.aspx" />
+    <Content Include="backstage\SeniorAdmin\SA_EvaluationExam.aspx" />
+    <Content Include="backstage\SeniorAdmin\SA_FirstLogin.aspx" />
+    <Content Include="backstage\SeniorAdmin\SA_GoodExam.aspx" />
+    <Content Include="backstage\SeniorAdmin\SA_OrderExam.aspx" />
+    <Content Include="backstage\SeniorAdmin\SA_OrderInfo.aspx" />
+    <Content Include="backstage\SeniorAdmin\SA_StoresUserInfo.aspx" />
+    <Content Include="backstage\SeniorAdmin\SA_SubTree.aspx" />
+    <Content Include="backstage\SeniorAdmin\SA_UserExam.aspx" />
+    <Content Include="backstage\UserAdmin\UA_AdminInfo.aspx" />
+    <Content Include="backstage\UserAdmin\UA_FirstLogin.aspx" />
+    <Content Include="backstage\UserAdmin\UA_SubTree.aspx" />
+    <Content Include="backstage\UserAdmin\UA_UserExam.aspx" />
+    <Content Include="backstage\UserAdmin\UA_UserInfo.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\Logic.dll" />
+    <Content Include="bin\Logic.pdb" />
+    <Content Include="bin\Models.dll" />
+    <Content Include="bin\Models.pdb" />
+    <Content Include="bin\SQLHelper.dll" />
+    <Content Include="bin\SQLHelper.pdb" />
+    <Content Include="bin\System.configuration.dll" />
+    <Content Include="bin\System.Configuration.Install.Resources.dll" />
+    <Content Include="formerstage\Evaluation\Evaluation.aspx" />
+    <Content Include="formerstage\GoodDisplay\Circuit City.aspx" />
+    <Content Include="formerstage\GoodDisplay\ClothesCity.aspx" />
+    <Content Include="formerstage\GoodDisplay\FirstClass.aspx" />
+    <Content Include="formerstage\GoodDisplay\FirstSelectGood.aspx" />
+    <Content Include="formerstage\GoodDisplay\Furniture City.aspx" />
+    <Content Include="formerstage\GoodDisplay\GoodClass.xml" />
+    <Content Include="formerstage\GoodDisplay\NoGood.aspx" />
+    <Content Include="formerstage\GoodDisplay\ProductShow.aspx" />
+    <Content Include="formerstage\GoodDisplay\SecondClass.aspx" />
+    <Content Include="formerstage\GoodDisplay\SecondSelectGood.aspx" />
+    <Content Include="formerstage\GoodDisplay\SelectGood.aspx" />
+    <Content Include="formerstage\GoodDisplay\ThirdClass.aspx" />
+    <Content Include="formerstage\GoodDisplay\ThirdSelectGood.aspx" />
+    <Content Include="formerstage\OrderExam\CancelOrders.aspx" />
+    <Content Include="formerstage\OrderExam\OrdersExam.aspx" />
+    <Content Include="formerstage\SaleOrders\AddOrderInfo.aspx" />
+    <Content Include="formerstage\SaleOrders\SingleGood.aspx" />
+    <Content Include="formerstage\stage_Master\debug.aspx" />
+    <Content Include="formerstage\stage_Master\GoodClass.xml" />
+    <Content Include="formerstage\UserRegister\Activation.aspx" />
+    <Content Include="formerstage\UserRegister\AlterPassWord.aspx" />
+    <Content Include="formerstage\UserRegister\FindPassWord.aspx" />
+    <Content Include="formerstage\UserRegister\Login.aspx" />
+    <Content Include="formerstage\UserRegister\PassWordReset.aspx" />
+    <Content Include="formerstage\UserRegister\PerInf_information.aspx" />
+    <Content Include="formerstage\UserRegister\PerInf_myaccount.aspx" />
+    <Content Include="formerstage\UserRegister\PerInf_myorder.aspx" />
+    <Content Include="formerstage\UserRegister\Register.aspx" />
+    <Content Include="formerstage\UserRegister\tip_register.aspx" />
+    <Content Include="GoodImg\iphone4s 3.png" />
+    <Content Include="GoodImg\iphone4s 4.png" />
+    <Content Include="GoodImg\iphone4s.jpg" />
+    <Content Include="GoodImg\Iphone4S1.jpg" />
+    <Content Include="GoodImg\iphone4s2.png" />
+    <Content Include="GoodImg\TCL XQB50-36SP 5公斤 全自动 洗衣机（亮灰色）.jpg" />
+    <Content Include="GoodImg\TCLKFRd-25GWDE22.png" />
+    <Content Include="GoodImg\三星I9103.jpg" />
+    <Content Include="GoodImg\三星I9300.jpg" />
+    <Content Include="GoodImg\亚都（YADU）KJF2901 空气净化器 装修卫士.jpg" />
+    <Content Include="GoodImg\先锋（singfun）遥控单冷型冷风扇 LG04-10AR.jpg" />
+    <Content Include="GoodImg\华生（Wahson） FS40-1102 机械式 落地扇1.jpg" />
+    <Content Include="GoodImg\商城开业.jpg" />
+    <Content Include="GoodImg\商城滚动2.jpg" />
+    <Content Include="GoodImg\夏普%28SHARP%29 LCD-40LX330A 40英寸 全高清LED液晶电视 黑色.jpg" />
+    <Content Include="GoodImg\奥马（Homa%29 BCD-118A5 118升 双门冰箱 拉丝银.jpg" />
+    <Content Include="GoodImg\奥马（homa%29 BCD-176A7 176升 双门冰箱（傲银）.jpg" />
+    <Content Include="GoodImg\奥马（Homa%29 BCD-192DC 192升 三门冰箱（银色）.jpg" />
+    <Content Include="GoodImg\女装1.png" />
+    <Content Include="GoodImg\好事达收纳柜.png" />
+    <Content Include="GoodImg\宝优妮洗衣机架.png" />
+    <Content Include="GoodImg\家具城.jpg" />
+    <Content Include="GoodImg\康佳（KONKA） LED32E320N 32英寸 窄边框超薄设计 网络智能LED电视（黑色）.jpg" />
+    <Content Include="GoodImg\康佳（KONKA） LED32E330C 32英寸 高清节能 LED电视（银色）.jpg" />
+    <Content Include="GoodImg\康佳（KONKA）LED42X5000DE 42英寸 窄边3D互联网电视（黑色）.jpg" />
+    <Content Include="GoodImg\恒源祥家纺床上用品多件套1米8婚庆十件套龙凤呈祥.png" />
+    <Content Include="GoodImg\成宏家纺 床上用品 全棉斜纹印花床单被套床罩枕套四件套 床品套件.png" />
+    <Content Include="GoodImg\成宏家纺 床上用品 全棉贡缎活性印花床单被套床罩四件套 床品套件 彩虹天堂.png" />
+    <Content Include="GoodImg\摩托罗拉XT390.jpg" />
+    <Content Include="GoodImg\服装城1.png" />
+    <Content Include="GoodImg\松下（Panasonic） F-PDF35C-P 空气净化器.jpg" />
+    <Content Include="GoodImg\松下（Panasonic） XQB60-Q662U 6公斤 立体搓全自动波轮洗衣机.jpg" />
+    <Content Include="GoodImg\格兰仕KFR-35GWdLD57-130%282%29.png" />
+    <Content Include="GoodImg\格兰仕KFR-72LWDLB10-330（2）.png" />
+    <Content Include="GoodImg\格力KFR-26GW（26556）FNDe-3.png" />
+    <Content Include="GoodImg\格力（GREE） FD-4009B 遥控 落地扇 （黑色）.jpg" />
+    <Content Include="GoodImg\格力（GREE） KS-0502a 机械式 冷风扇.jpg" />
+    <Content Include="GoodImg\欧司朗台灯.png" />
+    <Content Include="GoodImg\海尔（Haier）BCD-206SM 206升 三门冰箱（白色花纹--轻丝曼舞）.jpg" />
+    <Content Include="GoodImg\海尔（Haier）XQB50-M918 5公斤 关爱 全自动洗衣机 波轮式.jpg" />
+    <Content Include="GoodImg\海尔（Haier）XQB60-M918 6公斤 关爱 全自动洗衣机.jpg" />
+    <Content Include="GoodImg\生活诚品收纳架.png" />
+    <Content Include="GoodImg\电脑包1.png" />
+    <Content Include="GoodImg\男装1.png" />
+    <Content Include="GoodImg\福玛特（FMART）R-770智能机器人吸尘器%28科技黄）.jpg" />
+    <Content Include="GoodImg\科沃斯（ECOVACS）智能机器人吸尘器.jpg" />
+    <Content Include="GoodImg\科沃斯（Ecovacs）机器人吸尘器地宝580RD.jpg" />
+    <Content Include="GoodImg\科沃斯（Ecovacs）机器人吸尘器地宝720CP.jpg" />
+    <Content Include="GoodImg\空间大师微波炉架.png" />
+    <Content Include="GoodImg\童装1.png" />
+    <Content Include="GoodImg\罗莱全棉印花四件套.png" />
+    <Content Include="GoodImg\美的（Midea）单冷蒸发式冷风扇AC120-K.jpg" />
+    <Content Include="GoodImg\美的（Midea）遥控落地扇FS40-11AR1.jpg" />
+    <Content Include="GoodImg\美菱（Meiling%29冷风扇 LRG12-D 空调扇.jpg" />
+    <Content Include="GoodImg\艾美特%28Airmate%29遥控落地扇FS4027R-51.jpg" />
+    <Content Include="GoodImg\韩国惠人（HUROM） HU-100 韩国制造 原汁机.jpg" />
+    <Content Include="GoodImg\韩国惠人（HUROM） SJ（HJ%29-300.jpg" />
+    <Content Include="GoodImg\飞利浦 %28Philips%29.jpg" />
+    <Content Include="GoodImg\飞利浦台灯.png" />
+    <Content Include="GoodImg\飞利浦星宇台灯 %282%29.png" />
+    <Content Include="GoodImg\飞利浦星宇台灯.png" />
+    <Content Include="GoodImg\飞利浦（Philips） AC4074 空气净化器.jpg" />
+    <Content Include="GoodImg\飞利浦（Philips） AC4076 空气净化器.jpg" />
+    <Content Include="GoodImg\飞利浦（Philips） HR1871.jpg" />
+    <Content Include="GoodImg\飞利浦（Philips） PT720.jpg" />
+    <Content Include="GoodImg\飞利浦（Philips） PT860 .jpg" />
+    <Content Include="GoodImg\飞利浦（Philips）HQ912.jpg" />
+    <Content Include="GoodImg\飞科（FLYCO） FS330 浮动贴面剃须刀.jpg" />
+    <Content Include="image\001.jpg" />
+    <Content Include="image\002.jpg" />
+    <Content Include="image\003.jpg" />
+    <Content Include="image\004.jpg" />
+    <Content Include="image\07.gif" />
+    <Content Include="image\07.png" />
+    <Content Include="image\08.png" />
+    <Content Include="image\09.png" />
+    <Content Include="image\1.jpg" />
+    <Content Include="image\1.png" />
+    <Content Include="image\10.jpg" />
+    <Content Include="image\11.jpg" />
+    <Content Include="image\1111.jpg" />
+    <Content Include="image\2.jpg" />
+    <Content Include="image\2.png" />
+    <Content Include="image\21.jpg" />
+    <Content Include="image\28.jpg" />
+    <Content Include="image\3.jpg" />
+    <Content Include="image\3.png" />
+    <Content Include="image\4.jpg" />
+    <Content Include="image\4.png" />
+    <Content Include="image\47.jpg" />
+    <Content Include="image\49.jpg" />
+    <Content Include="image\5.png" />
+    <Content Include="image\51.jpg" />
+    <Content Include="image\53.jpg" />
+    <Content Include="image\57.jpg" />
+    <Content Include="image\6.jpg" />
+    <Content Include="image\67.jpg" />
+    <Content Include="image\7.jpg" />
+    <Content Include="image\74.jpg" />
+    <Content Include="image\75.jpg" />
+    <Content Include="image\8.jpg" />
+    <Content Include="image\81.jpg" />
+    <Content Include="image\82.jpg" />
+    <Content Include="image\87.jpg" />
+    <Content Include="image\89.gif" />
+    <Content Include="image\9.jpg" />
+    <Content Include="image\90.jpg" />
+    <Content Include="image\98.jpg" />
+    <Content Include="image\99.jpg" />
+    <Content Include="image\aaa1.jpg" />
+    <Content Include="image\aaa2.jpg" />
+    <Content Include="image\aaa3.jpg" />
+    <Content Include="image\aaa4.jpg" />
+    <Content Include="image\album-slider-arrow-h.png" />
+    <Content Include="image\album-slider-arrow.png" />
+    <Content Include="image\album-slider-button-h.png" />
+    <Content Include="image\album-slider-button.png" />
+    <Content Include="image\b001.jpg" />
+    <Content Include="image\b002.jpg" />
+    <Content Include="image\b003.jpg" />
+    <Content Include="image\b004.jpg" />
+    <Content Include="image\bg.gif" />
+    <Content Include="image\bg2.gif" />
+    <Content Include="image\bg4.gif" />
+    <Content Include="image\BigImg1.png" />
+    <Content Include="image\cancle.png" />
+    <Content Include="image\centertop.gif" />
+    <Content Include="image\denglu.gif" />
+    <Content Include="image\FlowBackground.jpg" />
+    <Content Include="image\houtui.gif" />
+    <Content Include="image\http_imgload.jpg" />
+    <Content Include="image\left.gif" />
+    <Content Include="image\bottombg.gif" />
+    <Content Include="image\center.gif" />
+    <Content Include="image\line.gif" />
+    <Content Include="image\logobs.gif" />
+    <Content Include="image\main_29.gif" />
+    <Content Include="image\main_34.gif" />
+    <Content Include="image\main_71.gif" />
+    <Content Include="image\main_72.gif" />
+    <Content Include="image\main_74.gif" />
+    <Content Include="image\mtoolallbg.gif" />
+    <Content Include="image\place.gif" />
+    <Content Include="image\png-0010.png" />
+    <Content Include="image\rightbg.gif" />
+    <Content Include="image\shuaxin.gif" />
+    <Content Include="image\tab_bg.gif" />
+    <Content Include="image\tb.gif" />
+    <Content Include="image\topbg.gif" />
+    <Content Include="image\toptop.gif" />
+    <Content Include="image\tuichu.gif" />
+    <Content Include="image\wang.png" />
+    <Content Include="image\yanzheng.png" />
+    <Content Include="image\zhuce.png" />
+    <Content Include="image\三星XX.jpg" />
+    <Content Include="image\副母版页下方图标2.jpg" />
+    <Content Include="image\商品详细介绍.jpg" />
+    <Content Include="image\商城公告.jpg" />
+    <Content Include="image\商城公告2.jpg" />
+    <Content Include="image\商城公告4.jpg" />
+    <Content Include="image\商城导航条.jpg" />
+    <Content Include="image\商城导航条2.jpg" />
+    <Content Include="image\商城标志2.jpg" />
+    <Content Include="image\商标1.jpg" />
+    <Content Include="image\商标背景.jpg" />
+    <Content Include="image\商标背景2.jpg" />
+    <Content Include="image\商标背景3.jpg" />
+    <Content Include="image\女鞋1.png" />
+    <Content Include="image\导航条4.jpg" />
+    <Content Include="image\导航条5.jpg" />
+    <Content Include="image\导航条背景.jpg" />
+    <Content Include="image\导航栏微条.jpg" />
+    <Content Include="image\左侧树背景.png" />
+    <Content Include="image\左侧树背景2.png" />
+    <Content Include="image\微条.jpg" />
+    <Content Include="image\搜索边框.jpg" />
+    <Content Include="image\搜索边框2.jpg" />
+    <Content Include="image\搜索边框3.jpg" />
+    <Content Include="image\服装城1.png" />
+    <Content Include="image\标题头微条.jpg" />
+    <Content Include="image\标题头渐变1.jpg" />
+    <Content Include="image\注册背景.jpg" />
+    <Content Include="image\电脑包1.png" />
+    <Content Include="image\男童2.png" />
+    <Content Include="image\男装1.png" />
+    <Content Include="image\童装1.png" />
+    <Content Include="image\节点二 %281%29.gif" />
+    <Content Include="image\节点二 %282%29.gif" />
+    <Content Include="image\质保.jpg" />
+    <Content Include="Regsiter.aspx" />
+    <Content Include="Scripts\chili-1.7.pack.js" />
+    <Content Include="Scripts\colorSelect.js" />
+    <Content Include="Scripts\editfunc.js" />
+    <Content Include="Scripts\jquery.accordion.js" />
+    <Content Include="Scripts\jquery.albumSlider.js" />
+    <Content Include="Scripts\jquery.albumSlider.min.js" />
+    <Content Include="Scripts\jquery.dimensions.js" />
+    <Content Include="Scripts\jquery.easing.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\js.js" />
+    <Content Include="Scripts\roller.js" />
+    <Content Include="Scripts\samedomain.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\StyleSheet2.css" />
+    <Content Include="Styles\StyleSheet3.css" />
+    <Content Include="verification code\verification code.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="backstage\Admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\Admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\Admin\AdminRegsiter.aspx.cs">
+      <DependentUpon>AdminRegsiter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\Admin\AdminRegsiter.aspx.designer.cs">
+      <DependentUpon>AdminRegsiter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\Back_Master\FirstLogin.Master.cs">
+      <DependentUpon>FirstLogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\Back_Master\FirstLogin.Master.designer.cs">
+      <DependentUpon>FirstLogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\EvaluationAdmin\EA_AdminInfo.aspx.cs">
+      <DependentUpon>EA_AdminInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\EvaluationAdmin\EA_AdminInfo.aspx.designer.cs">
+      <DependentUpon>EA_AdminInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\EvaluationAdmin\EA_EvaluationExam.aspx.cs">
+      <DependentUpon>EA_EvaluationExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\EvaluationAdmin\EA_EvaluationExam.aspx.designer.cs">
+      <DependentUpon>EA_EvaluationExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\EvaluationAdmin\EA_EvaluationInfo.aspx.cs">
+      <DependentUpon>EA_EvaluationInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\EvaluationAdmin\EA_EvaluationInfo.aspx.designer.cs">
+      <DependentUpon>EA_EvaluationInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\EvaluationAdmin\EA_FirstLogin.aspx.cs">
+      <DependentUpon>EA_FirstLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\EvaluationAdmin\EA_FirstLogin.aspx.designer.cs">
+      <DependentUpon>EA_FirstLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\EvaluationAdmin\EA_SubTree.aspx.cs">
+      <DependentUpon>EA_SubTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\EvaluationAdmin\EA_SubTree.aspx.designer.cs">
+      <DependentUpon>EA_SubTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_AddBigImg.aspx.cs">
+      <DependentUpon>GA_AddBigImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_AddBigImg.aspx.designer.cs">
+      <DependentUpon>GA_AddBigImg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_AddClum.aspx.cs">
+      <DependentUpon>GA_AddClum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_AddClum.aspx.designer.cs">
+      <DependentUpon>GA_AddClum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_AddGood.aspx.cs">
+      <DependentUpon>GA_AddGood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_AddGood.aspx.designer.cs">
+      <DependentUpon>GA_AddGood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_AddProperty.aspx.cs">
+      <DependentUpon>GA_AddProperty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_AddProperty.aspx.designer.cs">
+      <DependentUpon>GA_AddProperty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_AdminInfo.aspx.cs">
+      <DependentUpon>GA_AdminInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_AdminInfo.aspx.designer.cs">
+      <DependentUpon>GA_AdminInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_FirstLogin.aspx.cs">
+      <DependentUpon>GA_FirstLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_FirstLogin.aspx.designer.cs">
+      <DependentUpon>GA_FirstLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_GoodExam.aspx.cs">
+      <DependentUpon>GA_GoodExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_GoodExam.aspx.designer.cs">
+      <DependentUpon>GA_GoodExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_GoodExamInfo.aspx.cs">
+      <DependentUpon>GA_GoodExamInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_GoodExamInfo.aspx.designer.cs">
+      <DependentUpon>GA_GoodExamInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_SubTree.aspx.cs">
+      <DependentUpon>GA_SubTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_SubTree.aspx.designer.cs">
+      <DependentUpon>GA_SubTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_UpdateCircuitCity.aspx.cs">
+      <DependentUpon>GA_UpdateCircuitCity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_UpdateCircuitCity.aspx.designer.cs">
+      <DependentUpon>GA_UpdateCircuitCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_UpdateClothesCity.aspx.cs">
+      <DependentUpon>GA_UpdateClothesCity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_UpdateClothesCity.aspx.designer.cs">
+      <DependentUpon>GA_UpdateClothesCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_UpdateFurnitureCity.aspx.cs">
+      <DependentUpon>GA_UpdateFurnitureCity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_UpdateFurnitureCity.aspx.designer.cs">
+      <DependentUpon>GA_UpdateFurnitureCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_UpdateHomepage.aspx.cs">
+      <DependentUpon>GA_UpdateHomepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GA_UpdateHomepage.aspx.designer.cs">
+      <DependentUpon>GA_UpdateHomepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GoodHtmlEdit2.aspx.cs">
+      <DependentUpon>GoodHtmlEdit2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\GoodAdmin\GoodHtmlEdit2.aspx.designer.cs">
+      <DependentUpon>GoodHtmlEdit2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\OrderAdmin\OA_AdminInfo.aspx.cs">
+      <DependentUpon>OA_AdminInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\OrderAdmin\OA_AdminInfo.aspx.designer.cs">
+      <DependentUpon>OA_AdminInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\OrderAdmin\OA_FirstLogin.aspx.cs">
+      <DependentUpon>OA_FirstLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\OrderAdmin\OA_FirstLogin.aspx.designer.cs">
+      <DependentUpon>OA_FirstLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\OrderAdmin\OA_OrderExam.aspx.cs">
+      <DependentUpon>OA_OrderExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\OrderAdmin\OA_OrderExam.aspx.designer.cs">
+      <DependentUpon>OA_OrderExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\OrderAdmin\OA_OrderInfoma.aspx.cs">
+      <DependentUpon>OA_OrderInfoma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\OrderAdmin\OA_OrderInfoma.aspx.designer.cs">
+      <DependentUpon>OA_OrderInfoma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\OrderAdmin\OA_SubTree.aspx.cs">
+      <DependentUpon>OA_SubTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\OrderAdmin\OA_SubTree.aspx.designer.cs">
+      <DependentUpon>OA_SubTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\OrderAdmin\TotalDeal.aspx.cs">
+      <DependentUpon>TotalDeal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\OrderAdmin\TotalDeal.aspx.designer.cs">
+      <DependentUpon>TotalDeal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\AdminExam.aspx.cs">
+      <DependentUpon>AdminExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\AdminExam.aspx.designer.cs">
+      <DependentUpon>AdminExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\GeneralAdminInfo.aspx.cs">
+      <DependentUpon>GeneralAdminInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\GeneralAdminInfo.aspx.designer.cs">
+      <DependentUpon>GeneralAdminInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\NotActivate.aspx.cs">
+      <DependentUpon>NotActivate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\NotActivate.aspx.designer.cs">
+      <DependentUpon>NotActivate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_AdminInfo.aspx.cs">
+      <DependentUpon>SA_AdminInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_AdminInfo.aspx.designer.cs">
+      <DependentUpon>SA_AdminInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_DailyRecord.aspx.cs">
+      <DependentUpon>SA_DailyRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_DailyRecord.aspx.designer.cs">
+      <DependentUpon>SA_DailyRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_DayBookDay.aspx.cs">
+      <DependentUpon>SA_DayBookDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_DayBookDay.aspx.designer.cs">
+      <DependentUpon>SA_DayBookDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_DayBookInfo.aspx.cs">
+      <DependentUpon>SA_DayBookInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_DayBookInfo.aspx.designer.cs">
+      <DependentUpon>SA_DayBookInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_EvaluaInfo.aspx.cs">
+      <DependentUpon>SA_EvaluaInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_EvaluaInfo.aspx.designer.cs">
+      <DependentUpon>SA_EvaluaInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_EvaluationExam.aspx.cs">
+      <DependentUpon>SA_EvaluationExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_EvaluationExam.aspx.designer.cs">
+      <DependentUpon>SA_EvaluationExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_FirstLogin.aspx.cs">
+      <DependentUpon>SA_FirstLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_FirstLogin.aspx.designer.cs">
+      <DependentUpon>SA_FirstLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_GoodExam.aspx.cs">
+      <DependentUpon>SA_GoodExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_GoodExam.aspx.designer.cs">
+      <DependentUpon>SA_GoodExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_OrderExam.aspx.cs">
+      <DependentUpon>SA_OrderExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_OrderExam.aspx.designer.cs">
+      <DependentUpon>SA_OrderExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_OrderInfo.aspx.cs">
+      <DependentUpon>SA_OrderInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_OrderInfo.aspx.designer.cs">
+      <DependentUpon>SA_OrderInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_StoresUserInfo.aspx.cs">
+      <DependentUpon>SA_StoresUserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_StoresUserInfo.aspx.designer.cs">
+      <DependentUpon>SA_StoresUserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_SubTree.aspx.cs">
+      <DependentUpon>SA_SubTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_SubTree.aspx.designer.cs">
+      <DependentUpon>SA_SubTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_UserExam.aspx.cs">
+      <DependentUpon>SA_UserExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\SeniorAdmin\SA_UserExam.aspx.designer.cs">
+      <DependentUpon>SA_UserExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\UserAdmin\UA_AdminInfo.aspx.cs">
+      <DependentUpon>UA_AdminInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\UserAdmin\UA_AdminInfo.aspx.designer.cs">
+      <DependentUpon>UA_AdminInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\UserAdmin\UA_FirstLogin.aspx.cs">
+      <DependentUpon>UA_FirstLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\UserAdmin\UA_FirstLogin.aspx.designer.cs">
+      <DependentUpon>UA_FirstLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\UserAdmin\UA_SubTree.aspx.cs">
+      <DependentUpon>UA_SubTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\UserAdmin\UA_SubTree.aspx.designer.cs">
+      <DependentUpon>UA_SubTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\UserAdmin\UA_UserExam.aspx.cs">
+      <DependentUpon>UA_UserExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\UserAdmin\UA_UserExam.aspx.designer.cs">
+      <DependentUpon>UA_UserExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="backstage\UserAdmin\UA_UserInfo.aspx.cs">
+      <DependentUpon>UA_UserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="backstage\UserAdmin\UA_UserInfo.aspx.designer.cs">
+      <DependentUpon>UA_UserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\Evaluation\Evaluation.aspx.cs">
+      <DependentUpon>Evaluation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\Evaluation\Evaluation.aspx.designer.cs">
+      <DependentUpon>Evaluation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\Circuit City.aspx.cs">
+      <DependentUpon>Circuit City.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\Circuit City.aspx.designer.cs">
+      <DependentUpon>Circuit City.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\ClothesCity.aspx.cs">
+      <DependentUpon>ClothesCity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\ClothesCity.aspx.designer.cs">
+      <DependentUpon>ClothesCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\FirstClass.aspx.cs">
+      <DependentUpon>FirstClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\FirstClass.aspx.designer.cs">
+      <DependentUpon>FirstClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\FirstSelectGood.aspx.cs">
+      <DependentUpon>FirstSelectGood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\FirstSelectGood.aspx.designer.cs">
+      <DependentUpon>FirstSelectGood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\Furniture City.aspx.cs">
+      <DependentUpon>Furniture City.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\Furniture City.aspx.designer.cs">
+      <DependentUpon>Furniture City.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\NoGood.aspx.cs">
+      <DependentUpon>NoGood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\NoGood.aspx.designer.cs">
+      <DependentUpon>NoGood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\ProductShow.aspx.cs">
+      <DependentUpon>ProductShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\ProductShow.aspx.designer.cs">
+      <DependentUpon>ProductShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\SecondClass.aspx.cs">
+      <DependentUpon>SecondClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\SecondClass.aspx.designer.cs">
+      <DependentUpon>SecondClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\SecondSelectGood.aspx.cs">
+      <DependentUpon>SecondSelectGood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\SecondSelectGood.aspx.designer.cs">
+      <DependentUpon>SecondSelectGood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\SelectGood.aspx.cs">
+      <DependentUpon>SelectGood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\SelectGood.aspx.designer.cs">
+      <DependentUpon>SelectGood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\ThirdClass.aspx.cs">
+      <DependentUpon>ThirdClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\ThirdClass.aspx.designer.cs">
+      <DependentUpon>ThirdClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\ThirdSelectGood.aspx.cs">
+      <DependentUpon>ThirdSelectGood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\GoodDisplay\ThirdSelectGood.aspx.designer.cs">
+      <DependentUpon>ThirdSelectGood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\OrderExam\CancelOrders.aspx.cs">
+      <DependentUpon>CancelOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\OrderExam\CancelOrders.aspx.designer.cs">
+      <DependentUpon>CancelOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\OrderExam\OrdersExam.aspx.cs">
+      <DependentUpon>OrdersExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\OrderExam\OrdersExam.aspx.designer.cs">
+      <DependentUpon>OrdersExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\SaleOrders\AddOrderInfo.aspx.cs">
+      <DependentUpon>AddOrderInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\SaleOrders\AddOrderInfo.aspx.designer.cs">
+      <DependentUpon>AddOrderInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\SaleOrders\SingleGood.aspx.cs">
+      <DependentUpon>SingleGood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\SaleOrders\SingleGood.aspx.designer.cs">
+      <DependentUpon>SingleGood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\stage_Master\debug.aspx.cs">
+      <DependentUpon>debug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\stage_Master\debug.aspx.designer.cs">
+      <DependentUpon>debug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\stage_Master\FirstMa.Master.cs">
+      <DependentUpon>FirstMa.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\stage_Master\FirstMa.Master.designer.cs">
+      <DependentUpon>FirstMa.Master</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\stage_Master\PersonIfor.Master.cs">
+      <DependentUpon>PersonIfor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\stage_Master\PersonIfor.Master.designer.cs">
+      <DependentUpon>PersonIfor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\stage_Master\Secondary.Master.cs">
+      <DependentUpon>Secondary.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\stage_Master\Secondary.Master.designer.cs">
+      <DependentUpon>Secondary.Master</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\stage_Master\ShowProduct.Master.cs">
+      <DependentUpon>ShowProduct.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\stage_Master\ShowProduct.Master.designer.cs">
+      <DependentUpon>ShowProduct.Master</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\Activation.aspx.cs">
+      <DependentUpon>Activation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\Activation.aspx.designer.cs">
+      <DependentUpon>Activation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\AlterPassWord.aspx.cs">
+      <DependentUpon>AlterPassWord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\AlterPassWord.aspx.designer.cs">
+      <DependentUpon>AlterPassWord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\FindPassWord.aspx.cs">
+      <DependentUpon>FindPassWord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\FindPassWord.aspx.designer.cs">
+      <DependentUpon>FindPassWord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\PassWordReset.aspx.cs">
+      <DependentUpon>PassWordReset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\PassWordReset.aspx.designer.cs">
+      <DependentUpon>PassWordReset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\PerInf_information.aspx.cs">
+      <DependentUpon>PerInf_information.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\PerInf_information.aspx.designer.cs">
+      <DependentUpon>PerInf_information.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\PerInf_myaccount.aspx.cs">
+      <DependentUpon>PerInf_myaccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\PerInf_myaccount.aspx.designer.cs">
+      <DependentUpon>PerInf_myaccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\PerInf_myorder.aspx.cs">
+      <DependentUpon>PerInf_myorder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\PerInf_myorder.aspx.designer.cs">
+      <DependentUpon>PerInf_myorder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\tip_register.aspx.cs">
+      <DependentUpon>tip_register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formerstage\UserRegister\tip_register.aspx.designer.cs">
+      <DependentUpon>tip_register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regsiter.aspx.cs">
+      <DependentUpon>Regsiter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Regsiter.aspx.designer.cs">
+      <DependentUpon>Regsiter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="verification code\verification code.aspx.cs">
+      <DependentUpon>verification code.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="verification code\verification code.aspx.designer.cs">
+      <DependentUpon>verification code.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{0BD33DB5-998B-4209-BF36-B3D94FDB73E9}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{99BC1BDC-3486-40C7-B28F-CCB4B100999C}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="formerstage\stage_Master\Secondary.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="formerstage\stage_Master\FirstMa.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="formerstage\stage_Master\PersonIfor.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="backstage\Back_Master\FirstLogin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="formerstage\stage_Master\ShowProduct.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3193</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
